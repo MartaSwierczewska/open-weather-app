@@ -30,7 +30,7 @@ function WeatherInfo({latitude, longitude}) {
             </div>)
     }
 
-    {console.log(response)}
+    console.log(response)
 
     return (
         <div className="app">
