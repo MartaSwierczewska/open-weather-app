@@ -11,7 +11,12 @@ function UserInput({setUserInput}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         setUserInput(latitude, longitude)
-      }
+    }
+
+    const resetData = () => {
+        setLatitude('');
+        setLongitude('');
+    }
 
     return (
         <div className="center">
@@ -22,6 +27,7 @@ function UserInput({setUserInput}) {
                             <span>Latitude: </span>
                             <input
                                 type="number" 
+                                step="0.000001"
                                 name="latitude"
                                 min="-90" 
                                 max="90"
@@ -34,6 +40,7 @@ function UserInput({setUserInput}) {
                             <span>Longitude: </span>
                             <input 
                                 type="number" 
+                                step="0.000001"
                                 name="longitude" 
                                 min="-180" 
                                 max="180"
@@ -43,6 +50,7 @@ function UserInput({setUserInput}) {
                     </div>
                     <div className="center">
                         <input type="submit" value="Submit"/>
+                        <button style={{marginLeft: "20px"}} onClick={resetData}>Reset</button>
                         {/* <Button type="submit" value="Submit" className="button" variant="outlined" onClick={handleSubmit}>Submit</Button> */}
                     </div>
                 </form>
