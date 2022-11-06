@@ -5,7 +5,7 @@
 
 .input-wrapper {
     padding: 15px 30px;
-    min-width: 180px;
+    min-width: 200px;
     border-radius: 5%;
     margin-top: 20px;
     box-shadow: 2px 3px 20px rgba(162, 194, 194, 0.54);
@@ -17,7 +17,11 @@
 
 .input-box span {
     display: inline-block;
-    width: 90px;
+    width: 160px;
+}
+
+.input-width {
+    font-size: 14px;
 }
 
 .input-box input {
