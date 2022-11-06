@@ -1,0 +1,9 @@
+.input-box {
+    padding: 10px 30px;
+    max-width: 200px;
+    border-radius: 5%;
+    box-shadow: 2px 3px 20px rgba(162, 194, 194, 0.54);
+    /* border-style: solid; */
+    /* border-color: black; */
+    /* background-color: gray; */
+}
