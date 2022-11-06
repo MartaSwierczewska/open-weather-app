@@ -1,23 +1,31 @@
-.input-wrapper {
+.center {
     display: flex;
     justify-content: center;
 }
 
-.input-box {
-    padding: 10px 30px;
+.input-wrapper {
+    padding: 15px 30px;
     min-width: 200px;
     border-radius: 5%;
     margin-top: 20px;
     box-shadow: 2px 3px 20px rgba(162, 194, 194, 0.54);
 }
 
-.input {
+.input-box {
     margin-bottom: 20px;
 }
+
+.input {
+    width: 85px;
+}
+
 .button {
     color: var(--main-white-color) !important;
     border-color: var(--main-white-color) !important;
     transition: 0.2s ease-out !important;
     font-family: inherit !important;
+}
 
+.button:hover {
+    transform: scale(1.05) !important;
 }

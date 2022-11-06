@@ -7,7 +7,6 @@ function WeatherInfo({latitude, longitude}) {
 
     const [airQualityIndex, setAirQualityIndex] = useState(null);
     const [airPollutionData, setAirPollutionData] = useState(null);
-
     const [error, setError] = useState(false)
     
     useEffect(() => {

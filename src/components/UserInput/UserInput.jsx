@@ -14,30 +14,41 @@ function UserInput({setUserInput}) {
       }
 
     return (
-        <div className="input-wrapper">
-            <div className="input-box">
-                <div className="input">
-                    <span>Latitude: </span>
-                    <input 
-                        type="number" 
-                        name="latitude"
-                        min="-90" 
-                        max="90"
-                        backgroundColor="#d1d1d1" 
-                        value={latitude}
-                        onChange={(e) => setLatitude(e.target.value)}/>
-                </div>
-                <div className="input">
-                    <span>Longitude: </span>
-                    <input 
-                        type="number" 
-                        name="longitude" 
-                        min="-180" 
-                        max="180"
-                        value={longitude}
-                        onChange={(e) => setLongitude(e.target.value)}/>
-                </div>
-                <Button className="button" variant="outlined" onClick={handleSubmit}>Submit</Button>
+        <div className="center">
+            <div className="input-wrapper">
+                <form>
+                    <div className="input-box">
+                        <label>
+                            <span style={{display: "inline-block", width: "85px"}}>Latitude: </span>
+                            <input
+                                className="input"
+                                type="number" 
+                                name="latitude"
+                                min="-90" 
+                                max="90"
+                                value={latitude}
+                                onChange={(e) => setLatitude(e.target.value)}/>
+                        </label>
+                    </div>
+                    <div className="input-box">
+                        <label>
+                            <span style={{display: "inline-block", width: "85px"}}>Longitude: </span>
+                            <input 
+                                className="input"
+                                type="number" 
+                                name="longitude" 
+                                min="-180" 
+                                max="180"
+                                value={longitude}
+                                onChange={(e) => setLongitude(e.target.value)}/>
+                        </label>
+                    </div>
+                    <div className="center">
+                        <input type="submit" value="Submit"/>
+                        {/* <Button type="submit" value="Submit" className="button" variant="outlined" onClick={handleSubmit}>Submit</Button> */}
+                    </div>
+                </form>
+                
             </div>
         </div>
     );
