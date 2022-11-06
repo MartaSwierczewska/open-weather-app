@@ -12,3 +12,30 @@
     color: orange;
     width: 300px;
 }
+
+.good {
+    color: green;
+}
+
+.fair {
+    color: greenyellow;
+}
+
+.moderate {
+    color: orange;
+}
+
+.poor {
+    color: orangered;
+}
+
+.very-poor {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .weather-info-wrapper {
+        display: block;
+        margin-left: 40px;
+    }
+}

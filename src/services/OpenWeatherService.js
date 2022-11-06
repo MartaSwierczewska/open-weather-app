@@ -9,8 +9,8 @@ export const extractComponents = (result) => {
     return Object.keys(airPollutionComponents).map((key) => [airComponentsMap.get(key), airPollutionComponents[key]]);
 }
 
-export const transformAirQualityIndex = (result) => {
-    let index = result['list'][0]['main']['aqi'];
+// TODO add more description
+export const transformAirQualityIndex = (index) => {
     switch(index) {
         case 1:
           return "Good";
@@ -25,6 +25,23 @@ export const transformAirQualityIndex = (result) => {
         default:
           return "Something went wrong. Please try again."
       }
+}
+
+export const getAirQualityIndexStyle = (index) => {
+  switch(index) {
+    case 1:
+      return "good";
+    case 2:
+      return "fair";
+    case 3:
+      return "moderate";
+    case 4:
+      return "poor";
+    case 5:
+      return "very-poor";
+    default:
+      return "";
+  }
 }
 
 export const airComponents = new Array(
