@@ -1,11 +1,13 @@
 import React from 'react';
 import {useState, useEffect} from "react";
-import {fetchOpenWeatherData} from "../../services/OpenWeatherService";
+import {extractComponents, transformAirQualityIndex, fetchOpenWeatherData} from "../../services/OpenWeatherService";
 import './WeatherInfo.css';
 
 function WeatherInfo({latitude, longitude}) {
 
-    const [response, setResponse] = useState(null);
+    const [airQualityIndex, setAirQualityIndex] = useState(null);
+    const [airPollutionData, setAirPollutionData] = useState(null);
+
     const [error, setError] = useState(false)
     
     useEffect(() => {
@@ -16,26 +18,29 @@ function WeatherInfo({latitude, longitude}) {
                     setError(true)
                     return
                 }
-                setResponse(result)
+                setAirQualityIndex(transformAirQualityIndex(result))
+                setAirPollutionData(extractComponents(result))
             }).catch(() => setError(true))
         }
     }, [latitude, longitude])
 
     if (error) {
         return (
-            <div className={"app"}>
-                <div className={"progress-bar"}>
-                    <h4>Something went wrong, please try again.</h4>
-                </div>
-            </div>)
+            <div>
+                <h4>Something went wrong, please try again.</h4>
+            </div>
+        )
     }
 
-    console.log(response)
-
     return (
-        <div className="app">
-            <p>Latitude: {latitude}</p>
-            <p>Longitude: {longitude}</p>
+        <div>
+            <h4>AIR QUALITY INDEX</h4>
+            {airQualityIndex}
+            <h4>AIR POLLUTION DATA</h4>
+            {airPollutionData &&
+            airPollutionData.map((k) => {
+                return <p>{k[0]}: {k[1]} μg/m3</p>
+            })}
         </div>
     )
 }

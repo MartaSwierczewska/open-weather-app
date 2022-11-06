@@ -18,7 +18,9 @@ function Home() {
     return (
         <div className="app">
             <div>
-                <h2 style={{textAlign: "center"}}>Welcome!</h2>
+                <h2 style={{textAlign: "center"}}>Welcome! Here you can check the quality of the air in specified location.</h2>
+                <h3 style={{textAlign: "center"}}>To start, enter latitude and longitude. This website can help you: <a style={{textDecoration: "none"}} href={"https://www.latlong.net/"}>
+                    <span style={{color: "orange", fontSize: "18px"}}>https://www.latlong.net/</span></a></h3>
                 <UserInput setUserInput={setUserInput}/>
                 <WeatherInfo latitude={latitude} longitude={longitude}/>
             </div>

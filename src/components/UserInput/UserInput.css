@@ -1,9 +1,23 @@
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .input-box {
     padding: 10px 30px;
-    max-width: 200px;
+    min-width: 200px;
     border-radius: 5%;
+    margin-top: 20px;
     box-shadow: 2px 3px 20px rgba(162, 194, 194, 0.54);
-    /* border-style: solid; */
-    /* border-color: black; */
-    /* background-color: gray; */
+}
+
+.input {
+    margin-bottom: 20px;
+}
+.button {
+    color: var(--main-white-color) !important;
+    border-color: var(--main-white-color) !important;
+    transition: 0.2s ease-out !important;
+    font-family: inherit !important;
+
 }
