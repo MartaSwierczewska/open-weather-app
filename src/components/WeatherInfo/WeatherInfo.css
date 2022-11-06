@@ -6,6 +6,7 @@
 
 .weather-info-box {
     display: inline;
+    text-align: center;
 }
 
 .weather-info-box h4 {
@@ -15,22 +16,27 @@
 
 .good {
     color: green;
+    font-size: 22px;
 }
 
 .fair {
     color: greenyellow;
+    font-size: 22px;
 }
 
 .moderate {
     color: orange;
+    font-size: 22px;
 }
 
 .poor {
     color: orangered;
+    font-size: 22px;
 }
 
 .very-poor {
     color: red;
+    font-size: 22px;
 }
 
 @media screen and (max-width: 768px) {

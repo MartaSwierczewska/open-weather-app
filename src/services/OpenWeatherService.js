@@ -13,15 +13,15 @@ export const extractComponents = (result) => {
 export const transformAirQualityIndex = (index) => {
     switch(index) {
         case 1:
-          return "Good";
+          return "GOOD";
         case 2:
-          return "Fair";
+          return "FAIR";
         case 3:
-          return "Moderate";
+          return "MODERATE";
         case 4:
-          return "Poor";
+          return "POOR";
         case 5:
-          return "Very Poor";
+          return "VERY POOR";
         default:
           return "Something went wrong. Please try again."
       }

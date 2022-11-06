@@ -24,7 +24,7 @@ function UserInput({setUserInput}) {
                 <form onSubmit={handleSubmit}>
                     <div className="input-box">
                         <label>
-                            <span>Latitude: </span>
+                            <span>Latitude <a className="input-width">(-90, 90): </a></span>
                             <input
                                 type="number" 
                                 step="0.000001"
@@ -37,7 +37,7 @@ function UserInput({setUserInput}) {
                     </div>
                     <div className="input-box">
                         <label>
-                            <span>Longitude: </span>
+                            <span>Longitude <a className="input-width">(-180, 180): </a></span>
                             <input 
                                 type="number" 
                                 step="0.000001"
