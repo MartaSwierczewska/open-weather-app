@@ -1,0 +1,14 @@
+.weather-info-wrapper {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+.weather-info-box {
+    display: inline;
+}
+
+.weather-info-box h4 {
+    color: orange;
+    width: 300px;
+}

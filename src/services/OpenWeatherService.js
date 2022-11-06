@@ -27,6 +27,17 @@ export const transformAirQualityIndex = (result) => {
       }
 }
 
+export const airComponents = new Array(
+  'Carbon monoxide', 
+  'Nitrogen monoxide', 
+  'Nitrogen dioxide', 
+  'Ozone', 
+  'Sulphur dioxide', 
+  'Fine particles matter',
+  'Coarse particulate matter',
+  'Ammonia'
+);
+
 const airComponentsMap = new Map([
     ['co', 'Carbon monoxide'],
     ['no', 'Nitrogen monoxide'],
@@ -37,3 +48,4 @@ const airComponentsMap = new Map([
     ['pm10', 'Coarse particulate matter'],
     ['nh3', 'Ammonia'],
   ]);
+

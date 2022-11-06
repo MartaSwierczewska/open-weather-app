@@ -3,3 +3,12 @@
     font-size: 18px;
     font-family: 'Yuji Syuku', serif;
 }
+
+.info {
+    text-align: center;
+}
+
+.info span {
+    color: orange;
+    font-size: 18px;
+}

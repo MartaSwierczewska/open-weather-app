@@ -1,11 +1,11 @@
 import React from 'react';
 import {useState, useEffect} from "react";
-import {extractComponents, transformAirQualityIndex, fetchOpenWeatherData} from "../../services/OpenWeatherService";
+import {extractComponents, airComponents, transformAirQualityIndex, fetchOpenWeatherData} from "../../services/OpenWeatherService";
 import './WeatherInfo.css';
 
 function WeatherInfo({latitude, longitude}) {
 
-    const [airQualityIndex, setAirQualityIndex] = useState(null);
+    const [airQualityIndex, setAirQualityIndex] = useState('submit data to check');
     const [airPollutionData, setAirPollutionData] = useState(null);
     const [error, setError] = useState(false)
     
@@ -20,26 +20,37 @@ function WeatherInfo({latitude, longitude}) {
                 setAirQualityIndex(transformAirQualityIndex(result))
                 setAirPollutionData(extractComponents(result))
             }).catch(() => setError(true))
+        } else {
+            setAirQualityIndex('submit data to check');
+            setAirPollutionData(null);
         }
     }, [latitude, longitude])
 
     if (error) {
         return (
-            <div>
+            <div className="weather-info-wrapper">
                 <h4>Something went wrong, please try again.</h4>
             </div>
         )
     }
-
+    
     return (
-        <div>
-            <h4>AIR QUALITY INDEX</h4>
-            {airQualityIndex}
-            <h4>AIR POLLUTION DATA</h4>
-            {airPollutionData &&
-            airPollutionData.map((k) => {
-                return <p>{k[0]}: {k[1]} μg/m3</p>
-            })}
+        <div className="weather-info-wrapper">
+            <div className="weather-info-box">
+                <h4>AIR QUALITY INDEX</h4>
+                {airQualityIndex}
+            </div>
+            <div className="weather-info-box">
+                <h4>AIR POLLUTION DATA</h4>
+                {console.log(airPollutionData)}
+                {airPollutionData ?
+                airPollutionData.map((k) => {
+                    return <p key={k[0]}>{k[0]}: <b>{k[1]}</b> μg/m3</p>
+                }):
+                airComponents.map((k) => {
+                    return <p key={k}>{k}: </p>
+                })}
+            </div>
         </div>
     )
 }
