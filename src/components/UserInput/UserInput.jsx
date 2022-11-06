@@ -16,12 +16,11 @@ function UserInput({setUserInput}) {
     return (
         <div className="center">
             <div className="input-wrapper">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="input-box">
                         <label>
-                            <span style={{display: "inline-block", width: "85px"}}>Latitude: </span>
+                            <span>Latitude: </span>
                             <input
-                                className="input"
                                 type="number" 
                                 name="latitude"
                                 min="-90" 
@@ -32,9 +31,8 @@ function UserInput({setUserInput}) {
                     </div>
                     <div className="input-box">
                         <label>
-                            <span style={{display: "inline-block", width: "85px"}}>Longitude: </span>
+                            <span>Longitude: </span>
                             <input 
-                                className="input"
                                 type="number" 
                                 name="longitude" 
                                 min="-180" 

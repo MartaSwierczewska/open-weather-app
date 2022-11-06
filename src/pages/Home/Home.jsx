@@ -16,7 +16,7 @@ function Home() {
     }
 
     return (
-        <div className="app">
+        <div className="home">
             <div>
                 <h2 style={{textAlign: "center"}}>Welcome! Here you can check the quality of the air in specified location.</h2>
                 <h3 style={{textAlign: "center"}}>To start, enter latitude and longitude. This website can help you: <a style={{textDecoration: "none"}} 
