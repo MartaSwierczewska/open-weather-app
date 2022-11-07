@@ -12,29 +12,33 @@
 }
 
 .input-box {
-    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
-.input-box span {
+.input-box p {
     display: inline-block;
-    width: 160px;
-}
-
-.input-width {
-    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    width: 150px;
 }
 
 .input-box input {
     width: 85px;
 }
 
-.button {
-    color: var(--main-white-color) !important;
-    border-color: var(--main-white-color) !important;
+.input-button {
+    font-size: 16px;
+    font-family: 'Yuji Syuku', serif;
+    color: var(--main-white-color);
+    border-color: var(--main-white-color);
     transition: 0.2s ease-out !important;
-    font-family: inherit !important;
+    background-color: black;
+    padding: 3px 8px;
+    border-radius: 10%;
+    margin-top: 10px;
 }
 
-.button:hover {
+.input-button:hover {
     transform: scale(1.05) !important;
+    cursor: pointer;
 }

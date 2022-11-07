@@ -1,6 +1,5 @@
 import React from 'react';
 import {useState} from "react";
-import { Button } from "@mui/material";
 import './UserInput.css';
 
 function UserInput({setUserInput}) {
@@ -24,7 +23,7 @@ function UserInput({setUserInput}) {
                 <form onSubmit={handleSubmit}>
                     <div className="input-box">
                         <label>
-                            <span>Latitude <a className="input-width">(-90, 90): </a></span>
+                            <p>Latitude <span style={{fontSize: "14px"}}>(-90, 90): </span></p>
                             <input
                                 type="number" 
                                 step="0.000001"
@@ -37,7 +36,7 @@ function UserInput({setUserInput}) {
                     </div>
                     <div className="input-box">
                         <label>
-                            <span>Longitude <a className="input-width">(-180, 180): </a></span>
+                            <p>Longitude <span style={{fontSize: "14px"}}>(-180, 180): </span></p>
                             <input 
                                 type="number" 
                                 step="0.000001"
@@ -49,9 +48,8 @@ function UserInput({setUserInput}) {
                         </label>
                     </div>
                     <div className="center">
-                        <input type="submit" value="Submit"/>
-                        <button style={{marginLeft: "20px"}} onClick={resetData}>Reset</button>
-                        {/* <Button type="submit" value="Submit" className="button" variant="outlined" onClick={handleSubmit}>Submit</Button> */}
+                        <input className="input-button" type="submit" value="Submit"/>
+                        <button className="input-button" style={{marginLeft: "20px"}} onClick={resetData}>Reset</button>
                     </div>
                 </form>
                 
