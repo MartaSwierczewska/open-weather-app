@@ -6,6 +6,10 @@ This projects is created for the purspose of the interview task. It uses the Ope
 
 In order to run the project locally, you'll need NPM. If you don't have node and npm installed on your computer, you can download it from this website: https://nodejs.org/en/download/use. 
 
+Also, you need to enter your private Open Weather API KEY in the file _open-weather-app/src/services/credentials.js_. For that, register here (https://openweathermap.org).
+
+To start the project, run following commands:
+
 ### `npm install`
 
 Installs the dependencies in the local _node_modules_ folder.
