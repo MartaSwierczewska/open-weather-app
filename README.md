@@ -1,6 +1,6 @@
 # Online Air Pollution Checker
 
-This projects is created for the purspose of interview task. It uses the OpenWeather API (http://openweathermap.org/api/pollution/co) and allows to check the air quality in specified location. If needed, latitude and longitude can be extracted from the name of the city with the use of this website: https://www.latlong.net/.
+This projects is created for the purspose of the interview task. It uses the OpenWeather API (http://openweathermap.org/api/pollution/co) and allows to check the air quality in specified location. If needed, latitude and longitude can be extracted from the name of the city with the use of this website: https://www.latlong.net/.
 
 ## Available Scripts
 
