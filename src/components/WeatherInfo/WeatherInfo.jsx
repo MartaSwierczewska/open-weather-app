@@ -52,10 +52,10 @@ function WeatherInfo({latitude, longitude}) {
                 <h4>AIR POLLUTION DATA</h4>
                 {airPollutionData ?
                     airPollutionData.map((k) => {
-                        return <AirPollutionComponent component={k} isDataAvailable={true}/>
+                        return <AirPollutionComponent key={k} component={k} isDataAvailable={true}/>
                     }):
                     airComponents.map((k) => {
-                        return <AirPollutionComponent component={k} isDataAvailable={false}/>
+                        return <AirPollutionComponent key={k} component={k} isDataAvailable={false}/>
                     })}
             </div>
         </div>

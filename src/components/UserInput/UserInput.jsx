@@ -48,8 +48,8 @@ function UserInput({setUserInput}) {
                         </label>
                     </div>
                     <div className="center">
+                        <button className="input-button" style={{marginRight: "20px"}} onClick={resetData}>Reset</button>
                         <input className="input-button" type="submit" value="Submit"/>
-                        <button className="input-button" style={{marginLeft: "20px"}} onClick={resetData}>Reset</button>
                     </div>
                 </form>
                 
