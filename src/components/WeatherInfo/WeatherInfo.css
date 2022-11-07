@@ -6,6 +6,10 @@
 
 .weather-info-box {
     display: inline;
+    width: 380px;
+}
+
+.weather-info-box p {
     width: 320px;
 }
 
@@ -20,27 +24,27 @@
 
 .good {
     color: var(--air-quality-good-color);
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .fair {
     color: var(--air-quality-fair-color);
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .moderate {
     color: var(--air-quality-moderate-color);
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .poor {
     color: var(--air-quality-poor-color);
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .very-poor {
     color: var(--air-quality-very-poor-color);
-    font-size: 22px;
+    font-size: 28px;
 }
 
 @media screen and (max-width: 768px) {

@@ -48,35 +48,35 @@ export const getAirQualityIndexStyle = (index) => {
 }
 
 export const airComponents = new Array(
-  'Carbon monoxide', 
-  'Nitrogen monoxide', 
-  'Nitrogen dioxide', 
-  'Ozone', 
-  'Sulphur dioxide', 
-  'Fine particles matter',
-  'Coarse particulate matter',
-  'Ammonia'
+  'Carbon monoxide (CO)', 
+  'Nitrogen monoxide (NO)', 
+  'Nitrogen dioxide (NO2)', 
+  'Ozone (O3)', 
+  'Sulphur dioxide (SO2)', 
+  'Fine particles matter (PM2.5)',
+  'Coarse particulate matter (PM10)',
+  'Ammonia (NH3)'
 );
 
 const airComponentsMap = new Map([
-    ['co', 'Carbon monoxide'],
-    ['no', 'Nitrogen monoxide'],
-    ['no2', 'Nitrogen dioxide'],
-    ['o3', 'Ozone'],
-    ['so2', 'Sulphur dioxide'],
-    ['pm2_5', 'Fine particles matter'],
-    ['pm10', 'Coarse particulate matter'],
-    ['nh3', 'Ammonia'],
+    ['co', 'Carbon monoxide (CO)'],
+    ['no', 'Nitrogen monoxide (NO)'],
+    ['no2', 'Nitrogen dioxide (NO2)'],
+    ['o3', 'Ozone (O3)'],
+    ['so2', 'Sulphur dioxide (SO2)'],
+    ['pm2_5', 'Fine particles matter (PM2.5)'],
+    ['pm10', 'Coarse particulate matter (PM10)'],
+    ['nh3', 'Ammonia (NH3)'],
   ]);
 
   const airComponentsUrlMap = new Map([
-    ['Carbon monoxide', 'https://en.wikipedia.org/wiki/Carbon_monoxide'],
-    ['Nitrogen monoxide', 'https://en.wikipedia.org/wiki/Nitric_oxide'],
-    ['Nitrogen dioxide', 'https://en.wikipedia.org/wiki/Nitrogen_dioxide'],
-    ['Ozone', 'https://en.wikipedia.org/wiki/Ozone'],
-    ['Sulphur dioxide', 'https://en.wikipedia.org/wiki/Sulfur_dioxide'],
-    ['Fine particles matter', 'https://en.wikipedia.org/wiki/Particulates'],
-    ['Coarse particulate matter', 'https://en.wikipedia.org/wiki/Particulates#Size,_shape_and_solubility_matter'],
-    ['Ammonia', 'https://en.wikipedia.org/wiki/Ammonia'],
+    ['Carbon monoxide (CO)', 'https://en.wikipedia.org/wiki/Carbon_monoxide'],
+    ['Nitrogen monoxide (NO)', 'https://en.wikipedia.org/wiki/Nitric_oxide'],
+    ['Nitrogen dioxide (NO2)', 'https://en.wikipedia.org/wiki/Nitrogen_dioxide'],
+    ['Ozone (O3)', 'https://en.wikipedia.org/wiki/Ozone'],
+    ['Sulphur dioxide (SO2)', 'https://en.wikipedia.org/wiki/Sulfur_dioxide'],
+    ['Fine particles matter (PM2.5)', 'https://en.wikipedia.org/wiki/Particulates'],
+    ['Coarse particulate matter (PM10)', 'https://en.wikipedia.org/wiki/Particulates#Size,_shape_and_solubility_matter'],
+    ['Ammonia (NH3)', 'https://en.wikipedia.org/wiki/Ammonia'],
   ]);
 
