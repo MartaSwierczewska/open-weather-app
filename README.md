@@ -23,6 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 There are several external links on the website that can help you understand the Air Quality Index and Air Components.
 
-<img width="1393" alt="Zrzut ekranu 2022-11-7 o 15 33 18" src="https://user-images.githubusercontent.com/44815230/200335979-4157ea3d-395c-455d-b009-c3e808392390.png">
+<img width="1393" alt="Zrzut ekranu 2022-11-7 o 21 41 50" src="https://user-images.githubusercontent.com/44815230/200411224-928fcf50-dade-4cee-8e28-054b502489fc.png">
 
 
