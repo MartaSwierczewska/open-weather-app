@@ -44,10 +44,9 @@ function WeatherInfo({latitude, longitude}) {
         <div className="weather-info-wrapper">
             <div className="weather-info-box">
                 <h4>AIR QUALITY INDEX</h4>
-                {airQualityIndex ? 
-                <p className={getAirQualityIndexStyle(airQualityIndex)}>
-                    {transformAirQualityIndex(airQualityIndex)}</p> : 
-                'submit data to check'}
+                {airQualityIndex &&
+                <p className={getAirQualityIndexStyle(airQualityIndex)}>{transformAirQualityIndex(airQualityIndex)}</p>}
+                <p>Follow <a href="https://en.wikipedia.org/wiki/Air_quality_index#CAQI" target="_blank" rel="noreferrer">this link</a> to learn more about calculation of Air Quality index.</p>
             </div>
             <div className="weather-info-box">
                 <h4>AIR POLLUTION DATA</h4>

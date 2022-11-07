@@ -1,5 +1,16 @@
+:root {
+  --background-color: #000000;
+  --details-color: rgb(0, 162, 255);
+  --main-white-color: #c1d3d3;
+  --air-quality-good-color: green;
+  --air-quality-fair-color: greenyellow;
+  --air-quality-moderate-color: orange;
+  --air-quality-poor-color: orangered;
+  --air-quality-very-poor-color: red;
+}
+
 body {
-  background-color: #000000;
+  background-color: var(--background-color);
   background-image: url("media/background.png");
   min-height: 100%;
 }

@@ -6,35 +6,40 @@
 
 .weather-info-box {
     display: inline;
+    width: 320px;
 }
 
 .weather-info-box h4 {
-    color: orange;
-    width: 300px;
+    color: var(--details-color);
+}
+
+.weather-info-box a {
+    font-size: 18px;
+    color: var(--main-white-color);
 }
 
 .good {
-    color: green;
+    color: var(--air-quality-good-color);
     font-size: 22px;
 }
 
 .fair {
-    color: greenyellow;
+    color: var(--air-quality-fair-color);
     font-size: 22px;
 }
 
 .moderate {
-    color: orange;
+    color: var(--air-quality-moderate-color);
     font-size: 22px;
 }
 
 .poor {
-    color: orangered;
+    color: var(--air-quality-poor-color);
     font-size: 22px;
 }
 
 .very-poor {
-    color: red;
+    color: var(--air-quality-very-poor-color);
     font-size: 22px;
 }
 
@@ -43,4 +48,13 @@
         display: block;
         margin-left: 40px;
     }
+}
+
+.air-pollution-info {
+    margin-right: 5px;
+}
+
+
+.air-pollution-info:hover {
+    cursor: pointer;
 }

@@ -1,5 +1,5 @@
 .home {
-    color: #afbfc0;
+    color: var(--main-white-color);
     font-size: 18px;
     font-family: 'Yuji Syuku', serif;
 }
@@ -9,6 +9,6 @@
 }
 
 .info span {
-    color: orange;
+    color: var(--details-color);;
     font-size: 18px;
 }
