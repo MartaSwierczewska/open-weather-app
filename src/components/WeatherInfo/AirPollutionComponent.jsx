@@ -16,7 +16,6 @@ function AirPollutionComponent({component, isDataAvailable}) {
                 <IconContext.Provider value={{className: 'air-pollution-info'}}>
                     <AiOutlineInfoCircle onClick={() => handleClick(component[0])}/>
                 </IconContext.Provider>
-                {/* <BsInfoSquare className="air-pollution-info" onClick={() => handleClick(component[0])}/> */}
                 <span key={component[0]}>{component[0]}: <b>{component[1]}</b> μg/m3</span>
             </div>
         )

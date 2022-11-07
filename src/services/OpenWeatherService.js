@@ -47,6 +47,7 @@ export const getAirQualityIndexStyle = (index) => {
   }
 }
 
+// eslint-disable-next-line
 export const airComponents = new Array(
   'Carbon monoxide (CO)', 
   'Nitrogen monoxide (NO)', 
