@@ -9,6 +9,6 @@
 }
 
 .info span {
-    color: var(--details-color);;
+    color: var(--redirect-color);
     font-size: 18px;
 }

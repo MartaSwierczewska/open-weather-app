@@ -19,7 +19,8 @@
 
 .weather-info-box a {
     font-size: 18px;
-    color: var(--main-white-color);
+    text-decoration: none;
+    color: var(--redirect-color);
 }
 
 .good {
@@ -56,9 +57,11 @@
 
 .air-pollution-info {
     margin-right: 5px;
+    color: var(--redirect-color);
 }
 
 
 .air-pollution-info:hover {
+    transform: scale(1.05) !important;
     cursor: pointer;
 }

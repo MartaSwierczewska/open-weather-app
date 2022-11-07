@@ -1,4 +1,5 @@
 import React from 'react';
+import {IconContext} from "react-icons";
 import {AiOutlineInfoCircle} from 'react-icons/ai';
 import {getAirComponentUrl} from "../../services/OpenWeatherService";
 import './WeatherInfo.css';
@@ -12,14 +13,19 @@ function AirPollutionComponent({component, isDataAvailable}) {
     if (isDataAvailable) {
         return (
             <div style={{marginBottom: "20px"}}>
-                <AiOutlineInfoCircle className="air-pollution-info" onClick={() => handleClick(component[0])}/>
+                <IconContext.Provider value={{className: 'air-pollution-info'}}>
+                    <AiOutlineInfoCircle onClick={() => handleClick(component[0])}/>
+                </IconContext.Provider>
+                {/* <BsInfoSquare className="air-pollution-info" onClick={() => handleClick(component[0])}/> */}
                 <span key={component[0]}>{component[0]}: <b>{component[1]}</b> μg/m3</span>
             </div>
         )
     } else {
         return (
             <div style={{marginBottom: "20px"}}>
-                <AiOutlineInfoCircle className="air-pollution-info" onClick={() => handleClick(component)}/>
+                <IconContext.Provider value={{className: 'air-pollution-info'}}>
+                    <AiOutlineInfoCircle onClick={() => handleClick(component)}/>
+                </IconContext.Provider>
                 <span key={component}>{component}: </span>
             </div>
         )

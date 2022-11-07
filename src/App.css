@@ -1,6 +1,7 @@
 :root {
   --background-color: #000000;
   --details-color: rgb(0, 162, 255);
+  --redirect-color: rgb(225, 129, 3);
   --main-white-color: #c1d3d3;
   --air-quality-good-color: green;
   --air-quality-fair-color: greenyellow;
